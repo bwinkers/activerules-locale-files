@@ -23,15 +23,16 @@ describe('Module - activerules-locale-files', function() {
       
       // Mock site object to define its locale
       var site = {
-        locales: ['en']        
+        locales: ['en-US']        
       };
       
       // Mock languages that would accepted by the client
-      var acceptLangs = 'en';
+      var acceptLangs = ['en-US'];
 
       // Try to get calculated locale locations
       arLocales.getPaths(arRoot, acceptLangs, site)
       .then(function(localePaths) {
+        console.log(localePaths);
         expect(localePaths.length).to.equal(2);
       })
     });

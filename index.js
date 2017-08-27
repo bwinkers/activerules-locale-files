@@ -36,8 +36,8 @@ AR.prototype.getPaths = function (arRoot, acceptLangs, site) {
             // The default may have a different set of mapped locales than the individual site.
             
             // The base language is the first one provided
-            var baseLang = arRoot[0];
-            var localeStr = baseLang.substring(0,4);
+            var baseLang = acceptLangs[0];
+            var localeStr = baseLang.substring(0,2);
             
             localePaths.push('/' + arRoot.replace(/^\/+|\/+$/g, '') +  '/default/locales/' + localeStr  );
             
