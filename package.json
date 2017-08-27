@@ -4,10 +4,11 @@
   "description": "Used to define which locale files are checked for localization values",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "Test files used by Mocha and run from `npm test`"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nyc --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "chai": "^4.1.1",
     "coveralls": "^2.13.1",
     "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
     "sinon": "^3.2.1"
   }
 }
