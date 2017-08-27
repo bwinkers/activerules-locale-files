@@ -3,6 +3,13 @@ var expect    = require("chai").expect;
 
 // Our module should be up one level from the test directory
 var arLocales = require("../index.js");
+// 
+// We need the full path to the current directory.
+// We know where the relevant files are from there.
+var thisDirectory = __dirname;
+
+// Our test data is in a sub-directory of the test directory
+var arRoot = thisDirectory + '/data/';
 
 // Use English as the default locale
 var locale = 'en';
@@ -19,11 +26,11 @@ describe('Module - activerules-locale-files', function() {
         locales: ['en']        
       };
       
-      // Mock language requersted by the client
-      var acceptLang = 'en';
+      // Mock languages that would accepted by the client
+      var acceptLangs = 'en';
 
       // Try to get calculated locale locations
-      arLocales(site, acceptLang)
+      arLocales.getPaths(arRoot, acceptLangs, site)
       .then(function(localePaths) {
         expect(localePaths.length).to.equal(2);
       })
