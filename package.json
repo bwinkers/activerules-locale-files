@@ -1,0 +1,30 @@
+{
+  "name": "activerules-locale-files",
+  "version": "0.1.0",
+  "description": "Used to define which locale files are checked for localization values",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwinkers/activerules-locale-files.git"
+  },
+  "keywords": [
+    "activerules",
+    "locale",
+    "i18n",
+    "internationalization",
+    "translation",
+    "localization"
+  ],
+  "author": "Brian Winkers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bwinkers/activerules-locale-files/issues"
+  },
+  "homepage": "https://github.com/bwinkers/activerules-locale-files#readme"
+}
