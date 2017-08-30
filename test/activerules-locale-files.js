@@ -23,7 +23,8 @@ describe('Module - activerules-locale-files', function() {
       
       // Mock site object to define its locale
       var site = {
-        locales: ['en-US']        
+        locales: ['en-US'],
+        site: 'example'
       };
       
       // Mock languages that would accepted by the client
