@@ -1,5 +1,7 @@
 'use strict;'
 
+// activerules-locale-files/index.js
+
 /**
  *  This module calculates which localization files ActiveRules attempts to load.
  *  The files may or may not exist, AR is designed to use whatever is found.
@@ -39,9 +41,9 @@ AR.prototype.getPaths = function (arRoot, acceptLangs, site) {
             var baseLang = acceptLangs[0];
             var localeStr = baseLang.substring(0,2);
             
-            localePaths.push('/' + arRoot.replace(/^\/+|\/+$/g, '') +  '/default/locales/' + localeStr  );
+            localePaths.push('/' + arRoot.replace(/^\/+|\/+$/g, '') +  '/site/default/locales/' + localeStr  );
             
-            localePaths.push('/' + arRoot.replace(/^\/+|\/+$/g, '') +  '/' + site.site + '/locales/' + localeStr  );
+            localePaths.push('/' + arRoot.replace(/^\/+|\/+$/g, '') +  '/site/' + site.site + '/locales/' + localeStr  );
             
             resolve(localePaths);
             
