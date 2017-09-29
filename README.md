@@ -6,6 +6,7 @@
 [![Coverage Status](https://img.shields.io/coveralls/bwinkers/activerules-locale-files.svg)](https://coveralls.io/github/bwinkers/activerules-locale-files)
 [![Dependency Status](https://img.shields.io/david/bwinkers/activerules-locale-files.svg?label=deps)](https://david-dm.org/bwinkers/activerules-locale-files)
 [![devDependency Status](https://img.shields.io/david/dev/bwinkers/activerules-locale-files.svg?label=devDeps)](https://david-dm.org/bwinkers/activerules-locale-files#info=devDependencies)
+[![Known Vulnerabilities](https://snyk.io/test/github/bwinkers/activerules-locale-files/badge.svg)](https://snyk.io/test/github/bwinkers/activerules-locale-files)
 
 
 Used in ActiveRules to define the localization files we will attempt to load.
