@@ -11,4 +11,4 @@
 
 Used in ActiveRules to define the localization files we will attempt to load.
 
-Check back soon...
+Checkout [ActiveRules Phalcon](https://github.com/bwinkers/docker-php7-phalcon)
